@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-	//abrir a página home
+	//Para abrir a página home
 	//GetMpping acessa a raiz - contexto
 	@GetMapping("/")
 	public String home() {
