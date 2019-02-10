@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	
+
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	
+
 	<groupId>br.com.spring.pratica</groupId>
 	<artifactId>PraticaSpringBoot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -28,7 +29,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
-		
+
 		<!-- SPRING MVC -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -41,14 +42,50 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
-		<!--  -->
+
+		<!-- BANCO DE DADOS - MYSQL -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+
+		<!-- INÍCIO WEBJAR - EMPACOTADOR DE BIBLIOTECAS -->
+		<!-- https://www.webjars.org/ - LOCATOR-CORE - VINCULAR URL COM DEPENDÊNCIA DO PROJETO - IMPORTAÇÃO DE ARQUIVOS -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator-core</artifactId>
+		</dependency>
+
+		<!-- https://www.webjars.org/ - BOOTSTRAP -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+
+		<!-- https://www.webjars.org/ - ICONIC - BIBLIOTECA PARA ÍCONES-->
+		<dependency>
+			<groupId>org.webjars.bower</groupId>
+			<artifactId>open-iconic</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<!-- https://www.webjars.org/ - JQUERY -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.3.1-1</version>
+		</dependency>
+
+		<!-- https://www.webjars.org/ - jquery-mask-plugin -->
+		<dependency>
+			<groupId>org.webjars.bower</groupId>
+			<artifactId>jquery-mask-plugin</artifactId>
+			<version>1.14.13</version>
+		</dependency>
+		<!-- FIM WEBJAR -->
+
 		<!-- TESTE - VEM PADRÃO NO SPRING BOOT (UNIDADE DE TESTE) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
