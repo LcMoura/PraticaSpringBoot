@@ -4,10 +4,12 @@ import java.io.Serializable;
 
 import javax.persistence.*;
 
-//ID para chave primária
-//Transformar todas as classes em Serializable
-@SuppressWarnings("serial") //Omitir a implementação do serial, pois quem cuidará será o JPA ao compilar
-@MappedSuperclass //Informar que é uma super classe
+// ID para chave primária
+// Transformar todas as classes em Serializable
+// @SuppressWarnings = Omitir a implementação do serial, pois quem cuidará será o JPA ao compilar
+// @MappedSuperclass = Informar que é uma super classe
+@SuppressWarnings("serial")
+@MappedSuperclass 
 public abstract class AbstractEntity <ID extends Serializable> implements Serializable{
 	
 	@Id
